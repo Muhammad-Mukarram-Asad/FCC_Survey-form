@@ -16,20 +16,21 @@
 
     <form action="no action.php" id="survey-form" class="container">
         <label id="name-label" for="name">Name</label> <br>
-        <input type="text" id="name" value="" class="container" placeholder="Enter your name" required> <br> <br>
+        <input type="text" id="name" value="" class="form-control" placeholder="Enter your name" required> <br> <br>
 
         <label id="email-label" for="email">Email</label> <br>
-        <input type="email" id="email" class="container" placeholder="Enter your email" required> <br> <br>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required> <br> <br>
         <p id="error_paragraph"></p>
+
         <button id="emailButton" class="container" onclick="emailChecker()">Click here for checking email address</button> <br> <br>
         
         <label id="number-label" for="age">Age <span id="age_span"> (optional)</span></label> <br> 
-        <input type="number" value="" id="age" class="container" placeholder="Enter your age" min="10" max="60"> <br> <br>
+        <input type="number" value="" id="age" class="form-control" placeholder="Enter your age" min="10" max="60"> <br> <br>
 
         <label id= "dropdown_label" for="dropdown">Which option best describes your current role?</label>  <br>
-        <div class="select"> 
-        <select id="dropdown" class="container-sm container-md">
-            <option id="first_child"> Select Current role</option>
+        <div class="select container"> 
+        <select id="dropdown" class="form-select">
+            <option id="first_child" selected> Select Current role</option>
             <option value="1"> Student</option>
             <option value="2"> Full time job</option>
             <option value="3"> Part time job</option>
@@ -40,19 +41,19 @@
 
          <br> <br>
 
-         <label for="radio">Would you recommend freeCodeCamp to a friend?</label> <br>
-         <div class="radio_container">
-            <div class="radio_inner_container">
-                <input type="radio" name="name" value="1"> 
+         <label for="radio" class="form-label">Would you recommend freeCodeCamp to a friend?</label> <br>
+         <div class="radio_container container">
+            <div class="radio_inner_container mb-3">
+                <input type="radio" name="name" value="1" class="form-check-input"> 
                 <p id="radio_p"> Definitely</p> 
             </div>
-            <div class="radio_inner_container">
-                <input type="radio" name="name" value="2"> 
+            <div class="radio_inner_container mb-3">
+                <input type="radio" name="name" value="2" class="form-check-input"> 
                  <p id="radio_p">Maybe </p>
             </div>
 
-            <div class="radio_inner_container">
-                <input type="radio" name="name" value="3">
+            <div class="radio_inner_container mb-3">
+                <input type="radio" name="name" value="3" class="form-check-input">
                 <p id="radio_p">Not Sure </p>
             </div>
         </div>
@@ -60,10 +61,10 @@
 
          <br> <br>
 
-         <label id="dropdown_label" for="dropdown">What is your favorite feature of freeCodeCamp?</label> <br>
-         <div class="select"> 
-         <select id="dropdown" class="container">
-            <option id="first_child"> Select an option </option>
+         <label id="dropdown_label" for="dropdown" class="form-label">What is your favorite feature of freeCodeCamp?</label> <br>
+         <div class="select container mb-3"> 
+         <select id="dropdown" class="form-select">
+            <option id="first_child" selected> Select an option </option>
             <option value="1"> Challenges</option>
             <option value="2"> Projects</option>
             <option value="3"> Community </option>
@@ -73,61 +74,61 @@
 
          <br> <br>
 
-         <label for="checkboxes">What would you like to see improved? (Check all that apply)</label> <br>
+         <label class="form-label" for="checkboxes">What would you like to see improved? (Check all that apply)</label> <br>
 
-         <div class="checkbox_container">
-            <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="1">
+         <div class="checkbox_container container">
+            <div class="checkbox_inner_container form-check ">
+                <input type="checkbox" name="checkboxes" value="1" class="form-check-input">
                 <p>Front-end Projects</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="2">
+                <input type="checkbox" name="checkboxes" value="2" class="form-check-input">
                 <p>Back-end Project</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="3">
+                <input type="checkbox" name="checkboxes" value="3" class="form-check-input">
                 <p>Data Visualization</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="4">
+                <input type="checkbox" name="checkboxes" value="4" class="form-check-input">
                 <p>Challenges</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="5">
+                <input type="checkbox" name="checkboxes" value="5" class="form-check-input">
                 <p>Open Source Community</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="6">
+                <input type="checkbox" name="checkboxes" value="6" class="form-check-input">
                 <p>Gitter help rooms</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="7">
+                <input type="checkbox" name="checkboxes" value="7" class="form-check-input">
                 <p>Videos</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="8">
+                <input type="checkbox" name="checkboxes" value="8" class="form-check-input">
                 <p>city Meetups</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="9">
+                <input type="checkbox" name="checkboxes" value="9" class="form-check-input">
                 <p>Wiki</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="10">
+                <input type="checkbox" name="checkboxes" value="10" class="form-check-input">
                 <p>Forums</p>
             </div>
 
             <div class="checkbox_inner_container">
-                <input type="checkbox" name="checkboxes" value="11">
+                <input type="checkbox" name="checkboxes" value="11" class="form-check-input">
                 <p>Additional Courses</p>
             </div>
         </div>
@@ -135,7 +136,7 @@
          <br> <br>
 
          <label id="textarea_label" for="textarea">Any comments or suggestions?</label> <br>
-         <textarea cols="70" rows="7"></textarea>
+         <textarea cols="70" rows="7" class="container"></textarea>
  
          <br> <br>
          <button id="submit" class="container">Submit</button>
